@@ -9,38 +9,56 @@
     <link rel="stylesheet" href="sheep.css">
 </head>
 
-<body >
+<body>
     <div id="sheep" onclick="var audio = new Audio('baaa2.mp3');
-    audio.play();"></div>
+    audio.play();
+    myFunction();"></div>
+    <h1 id="demo" class="text2"></h1>
+    <div class="container">
+        <div class="text2">
 
-  <div class="container">
-    <div class="text2">
-      
-        <h2> امسك الخروف قبل ما يهرب</h2>
+            <h2> امسك الخروف قبل ما يهرب</h2>
 
-        
-    </div>
-            <div class="text">
-                <h1>مهندس / رومانى منير</h1>
-                <h2>يتمنى لكم</h2>
-                <h2>عيد أضحى سعيد</h2>
-                <p>Happy Eid-Al-Adha</p>
-            </div>
-            <div class="text2">
-      
-                <h2> catch the sheep</h2>
-        
-                
-            </div>
+
         </div>
+        <div class="text">
+            <h1>مهندس / رومانى منير</h1>
+            <h2>يتمنى لكم</h2>
+            <h2>عيد أضحى سعيد</h2>
+            <p>Happy Eid-Al-Adha</p>
+        </div>
+        <div class="text2">
 
-    
-            <img src="home page.svg" alt="" srcset="" width="100%">
+            <h2> catch the sheep</h2>
+
+
+        </div>
+    </div>
+
+
+    <img src="home page.svg" alt="" srcset="" width="100%">
 
 
 
     <div id="sheep1" onclick="var audio = new Audio('baaa2.mp3');
-    audio.play();"></div>
+    audio.play();
+    myFunction();"></div>
+
+
+
+
+
+
+
+    <script>
+        function myFunction() {
+            var person = prompt("Please enter your name برجاء ادخال اسمك ", "حماده");
+            if (person != null) {
+                document.getElementById("demo").innerHTML =
+                    "كل سنة وانت طيب يا  " + person;
+            }
+        }
+    </script>
 
 </body>
 
