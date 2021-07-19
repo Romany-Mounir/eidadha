@@ -1,0 +1,94 @@
+body{
+    background: url(bg1.jpg);
+    background-size: 100%;
+
+}
+#sheep{
+background: url(sheep.png);
+
+width: 100%;
+
+animation: walk 2s steps(8) infinite , forward 25s linear infinite;
+
+}
+
+#sheep1{
+    background: url(sheep1.png);
+ 
+
+    width: 100%;
+
+    animation: walk 2s steps(8) infinite , forward 25s linear infinite;
+    }
+@keyframes walk{
+0%{
+    background-position: 0px;
+}
+100%{
+    background-position: 3000px;
+
+}
+}
+
+.text{
+    background-color: rgba(255, 0, 0, 0.568);
+    border-radius: 10%;
+    padding:1%;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+   
+  
+
+}
+.text2{
+    background-color: rgba(233, 233, 233, 0.568);
+    border-radius: 10%;
+    padding:1%;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+  
+  
+
+}
+img{
+    width: 50%;
+ 
+    margin: 0 25% 0 25%;
+
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+  }
+  @media screen and (min-width: 300px) {
+    #sheep{ 
+        background-size: 100%;
+        height: 80px;
+
+    }
+    #sheep1{ 
+        background-size: 100%;
+        height: 50px;
+
+    }
+}
+    @media screen and (min-width: 800px) {
+        #sheep{ 
+            background-size: 80%;
+            height: 150px;
+    
+        }
+        #sheep1{ 
+            background-size: 80%;
+            height: 100px;
+    
+        }
+    }
